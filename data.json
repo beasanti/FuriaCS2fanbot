@@ -1,0 +1,49 @@
+{
+  "votos": {
+    "5688677874": "KSCERATO",
+    "6154918949": "KSCERATO"
+  },
+  "pontos": {
+    "5688677874": 109,
+    "6154918949": 9
+  },
+  "nicknames": {
+    "5688677874": "Beatriz",
+    "6154918949": "flpe7"
+  },
+  "upcomingMatches": [
+    {
+      "date": "28/04/2025",
+      "time": "15:00",
+      "opponent": "Imperial",
+      "event": "IEM Katowice"
+    },
+    {
+      "date": "30/04/2025",
+      "time": "18:00",
+      "opponent": "Liquid",
+      "event": "BLAST Premier"
+    }
+  ],
+  "recentResults": [
+    {
+      "date": "20/04/2025",
+      "opponent": "NAVI",
+      "score": "2-1",
+      "event": "ESL Pro League"
+    },
+    {
+      "date": "15/04/2025",
+      "opponent": "FaZe",
+      "score": "1-2",
+      "event": "IEM Rio"
+    }
+  ],
+  "curiosidades": [
+    "🎯 A FURIA foi o primeiro time brasileiro a vencer a Team Liquid em 2023.",
+    "🐆 O nome FURIA vem da palavra 'furioso', simbolizando agressividade no jogo.",
+    "🏆 KSCERATO é um dos jogadores com mais MVPs da equipe.",
+    "🌎 A FURIA já jogou campeonatos em mais de 10 países diferentes.",
+    "🎮 A line-up da FURIA tem uma das maiores taxas de headshot da América do Sul!"
+  ]
+}
