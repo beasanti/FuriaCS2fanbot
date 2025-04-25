@@ -91,5 +91,5 @@ Pull requests são bem-vindas! Para grandes mudanças, abra uma issue primeiro e
 
 ## 📜 Licença
 
-MIT © Seu Nome
+MIT © Beatriz Santina
 
