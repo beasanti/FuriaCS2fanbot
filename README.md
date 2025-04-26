@@ -1,10 +1,3 @@
-Seu README já está muito bem estruturado e informativo! 👏  
-Mas como agora você também quer subir **uma landing page na Vercel**, é bom separar o conteúdo do bot e da landing, ou adicionar uma seção sobre a **landing page** no mesmo repositório, se ambos fazem parte do projeto.
-
-Aqui vai uma sugestão atualizada com essa **nova seção**:
-
----
-
 # FURIA CS2 Bot
 
 Um bot para Telegram que fornece informações sobre a equipe de CS2 FURIA: próximos jogos, resultados recentes, notícias, curiosidades, enquetes e ranking de usuários.
