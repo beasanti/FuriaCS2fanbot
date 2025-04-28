@@ -4,30 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FURIA Esports - Bot Telegram</title>
-    <link rel="stylesheet" href="htmlcss.css">
+  <link rel="stylesheet" href="htmlcss.css">
 </head>
 <body>
 
-<div class="container">
-  <div class="left">
-    <div class="logos">
-      <img class="logo" src="assets/logo.png" alt="FURIA Logo">
-      <img class="font" src="assets/font.png" alt="FURIA Font">
+  <div class="container">
+    <div class="left">
+      <div class="logos">
+        <img class="logo" src="assets/logo.png" alt="FURIA Logo">
+        <img class="font" src="assets/font.png" alt="FURIA Font">
+      </div>
+      <div class="text">
+        Fique por dentro dos jogos de CS2,<br>
+        resultados, curiosidades e muito mais!<br>
+        Acesse nosso bot!
+      </div>
+      <a class="button" href="https://t.me/FuriaCS2fanbot" target="_blank">Telegram</a>
+
+      <div class="rolling-gallery-container">
+        <button class="prev" onclick="move(-1)">&#10094;</button>
+        <div class="rolling-gallery" id="rolling-gallery"></div>
+        <button class="next" onclick="move(1)">&#10095;</button>
+      </div>
     </div>
-    <div class="text">
-      Fique por dentro dos jogos de CS2,<br>
-      resultados, curiosidades e muito mais!<br>
-      Acesse nosso bot!
+
+    <div class="right">
+      <div class="frame"></div>
+      <img class="cs2-logo" src="assets/cs2logo.png" alt="CS2 Logo">
+      <img class="personagens" src="assets/personagens.png" alt="Jogadores">
     </div>
-    <a class="button" href="https://t.me/FuriaCS2fanbot" target="_blank">Telegram</a>
   </div>
 
-  <div class="right">
-    <div class="frame"></div> 
-    <img class="cs2-logo" src="assets/cs2logo.png" alt="CS2 Logo"> 
-    <img class="personagens" src="assets/personagens.png" alt="Jogadores"> 
-  </div>
-</div>
+  <script>
+    const images = [
+      'assets/galeria1.jpg',
+      'assets/galeria2.jpg',
+      'assets/galeria3.jpg',
+      'assets/galeria4.jpg',
+      'assets/galeria5.jpg'
+    ];
+    let currentIndex = 0;
+    const rollingGallery = document.getElementById('rolling-gallery');
 
+    function createGallery(imgs) {
+      imgs.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Imagem do Carrossel';
+        rollingGallery.appendChild(img);
+      });
+    }
+
+    function move(direction) {
+      const count = images.length;
+      currentIndex = (currentIndex + direction + count) % count;
+      const offset = currentIndex * (150 + 10);
+      rollingGallery.style.transform = `translateX(-${offset}px)`;
+    }
+
+    createGallery(images);
+  </script>
 </body>
 </html>
